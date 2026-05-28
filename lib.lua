@@ -4572,15 +4572,11 @@ function library:init()
             text = {
                 {self.cheatname, true},
                 {"Private", true},
-                {self.gamename, true},
                 {'0 fps', true},
-                {'0ms', true},
-                {'00:00:00', true},
-                {'M, D, Y', true},
             };
             lock = 'custom';
             position = newUDim2(0,0,0,0);
-            refreshrate = 25;
+            refreshrate = 1000;
         }
 
         function self.watermark:Update()
