@@ -4586,7 +4586,7 @@ function library:init()
                 local daySuffix = math.floor(date[2]%10)
                 date[2] = date[2]..(daySuffix == 1 and 'st' or daySuffix == 2 and 'nd' or daySuffix == 3 and 'rd' or 'th')
 
-                self.text[4][1] = library.stats.fps..' fps'
+                self.text[3][1] = library.stats.fps..' fps'
 
                 local text = {};
                 for _,v in next, self.text do
